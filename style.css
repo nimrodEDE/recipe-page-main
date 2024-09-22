@@ -1,0 +1,158 @@
+:root {
+  --paleStone: #e4ded8;
+  --lightStone: #f3e6d8;
+  --brownStone: #854632;
+  --greyStone: #5f574e;
+  --darkStone: #302d2c;
+  --lightPink: hsl(330, 100%, 98%);
+  --pink: #7b284f;
+  --white: #fff;
+}
+
+/*body & container */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--lightStone);
+  font-family: "Outfit", sans-serif;
+}
+
+figcaption,
+h1 {
+  font-family: "Young Serif", sans-serif;
+}
+
+.container {
+  width: 60%;
+  margin: 1.5rem auto;
+  background-color: var(--white);
+  display: flex;
+  flex-direction: column;
+  padding: 2.3rem;
+  border-radius: 1rem;
+}
+
+/* img section */
+
+img {
+  width: 100%;
+  border-radius: 1rem;
+}
+
+figcaption {
+  margin: 1rem 0;
+  font-size: 2.5rem;
+}
+
+figcaption,
+p {
+  color: var(--darkStone);
+}
+
+.desc {
+  margin-bottom: 2rem;
+  padding: 0 8rem 0 0;
+  color: var(--greyStone);
+}
+
+/* sections */
+
+article {
+  background-color: var(--lightPink);
+  padding: 1rem 1.5rem;
+  border-radius: 1rem;
+}
+
+article h2 {
+  color: var(--pink);
+  font-size: 1.3rem;
+  letter-spacing: 0.5px;
+}
+
+ul li,
+ol li {
+  padding-left: 1.2rem;
+  margin: 1rem 0 0 1.2rem;
+  color: var(--greyStone);
+  vertical-align: center;
+}
+
+section li:last-child,
+section li:last-child {
+  border-bottom: 2px var(--paleStone) solid;
+  padding-bottom: 1rem;
+}
+
+ul li:last-child {
+  margin-bottom: 0.2rem;
+}
+
+span {
+  font-weight: bold;
+}
+
+ol li {
+  padding-right: 8rem;
+}
+
+h1 {
+  margin-top: 1.3rem;
+  color: var(--brownStone);
+  font-size: 2rem;
+}
+
+.nutrition p {
+  margin-top: 1rem;
+}
+
+table {
+  width: 100%;
+  margin: 1.5rem;
+}
+
+td {
+  padding: 0.8rem 1.5rem;
+  border-bottom: var(--lightStone) 1px solid;
+}
+
+td span {
+  color: var(--brownStone);
+}
+
+@media (max-width: 800px) {
+  .container {
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+  }
+
+  .desc,
+  article,
+  section {
+    margin: 1rem;
+  }
+
+  figcaption {
+    font-size: 2rem;
+    padding: 1rem;
+  }
+
+  h1 {
+    font-size: 1.6rem;
+  }
+
+  #img-container {
+    width: 100%;
+    padding: 0;
+  }
+  .desc,
+  ul li,
+  ol li {
+    padding: 0;
+  }
+}
